@@ -1,8 +1,52 @@
 
-html, body {
-margin: auto;
-padding: 0;
-max-width: 500px;
-text-align: center;
-background: rebeccapurple;
+ html, body {
+    margin: auto;
+    padding: 0;
+    max-width: 450px;
+    text-align: center;
+    background-color: aliceblue;
+    font-family: sans-serif;
+    font: intel;
+    margin-top: 50px;
+
+}
+
+.main {
+    background:  linear-gradient(246.26deg, #585DFE 0%, #FB3796 100%);
+    border-style: none;
+    border-radius: 5px;
+    padding-top: 25px;
+    
+}
+
+.container1 {
+    color: #fff;
+    font-weight: 800;
+    padding-bottom: 20px;
+}
+
+.container2 {
+    background-color: #1F2937;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  
+}
+
+.input {
+    font-size: 97.25px;
+}
+
+h5 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 5px;
+}
+p {
+    font-weight: 346;
+    font-size: 14px;
+    font-style: normal;
+    height: 30px;
+    border-radius: nullpx;
+
+
 }
