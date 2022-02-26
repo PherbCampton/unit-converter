@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>Unit Converter</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,26 +9,32 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="main.css">
-        <script src="index.js"></script>
-    <body>v
+    </head>
+    <body>
         <div class="main">
             <section class="container1">
                 <h2>Metric/Imperial Unit Conversion</h2>
-                <span class="input">20</span>
+                <input type="tel" id="input-el" placeholder="0" maxlength="7"
+                oninput="unitConverter(this.value)" onchange="unitConverter(this.value)" autocomplete="off"> <br>
+                <!-- <span class="input">20</span> -->
                 <br>
             </section>
 
             <section class="container2">
                 <h5 class="result1">Length (Meter/Feet)</h5>
-                <p>This is the result of the Length conversion</p>
+                <p> <span id="meters">0</span> meter(s) = <span id="feet-result">0</span> feet |
+                    <span id="feets">0</span> feet = <span id="meter-result">0</span> meter(s)</p>
 
                 <h5 class="result2">Volume (Liters/Gallons)</h5>
-                <p>This is the result of the Volume conversion</p>
+                <p> <span id="liters">0</span> liter(s) = <span id="gallon-result">0</span> gallon(s) |
+                    <span id="gallons">0</span> gallon(s) = <span id="liter-result">0</span> liter(s)</p>
 
                 <h5 class="result3">Mass (Kilograms/Pounds)</h5>
-                <p>This is the result of the Mass conversion</p>
-            </section>  
-        </div>
+                <p> <span id="kilograms">0</span> kiligram(s) = <span id="pound-result">0</span> pound(s) |
+                    <span id="pounds">0</span> pound(s) = <span id="kilogram-result">0</span> kilogram(s)</p>
 
+            </section>
+        </div>
+    <script src="index.js"></script>
     </body>
-</html>   
+</html>
